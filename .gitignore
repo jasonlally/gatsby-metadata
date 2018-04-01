@@ -52,4 +52,4 @@ node_modules/
 .serverless/
 
 # These are downloaded by getmetadata.js through the build process yarn run build
-src/datasets/
+src/datasets/*
