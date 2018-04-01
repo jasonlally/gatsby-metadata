@@ -2,16 +2,9 @@ const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'DataSF Open Data Metadata',
   },
   plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `data`,
-        path: path.join(__dirname, `data`),
-      },
-    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
