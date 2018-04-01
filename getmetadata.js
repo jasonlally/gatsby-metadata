@@ -7,6 +7,11 @@ const YAML = require('json2yaml')
 
 let metadata = []
 
+// Make directory to put dataset markdown via saveMD()
+mkdirp('./src/datasets', (err) => {
+  if (err) console.log(err)
+})
+
 const saveMD = _ => {
   Object.keys(metadata).forEach((key) => {
     let content = YAML.stringify(metadata[key])
